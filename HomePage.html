@@ -1,0 +1,68 @@
+<html>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+<body>
+	<div class="header" id="myHeader">
+		<h2>Supriya Radhkrishnan</h2>
+	</div>
+	<br />
+	<a href ="About.html">About</a>
+	 &ensp;&ensp;&ensp;&ensp;
+	<a href ="Portfolio.html">Portfolio</a>
+	
+	<h2>Personal Interests</h2>
+	<p><i>Acrylic Painting , Traveling , Learning different languages</i></p>
+	<h2>Last Role</h2>
+	<p><i>Soa Developer</i></p>
+	<h2>HomeTown</h2>
+	<p><i>I am from Pondicherry,a small city in South of India.
+	It is a coastal region with a number of beaches.</i></p>
+	<footer>
+  <p>Personal Profile:Supriya Radhkrishnan<br>
+</footer>
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</html>	
