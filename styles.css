@@ -1,0 +1,39 @@
+body {
+	margin:30;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:lightblue;
+	font-color:white;
+}
+
+p{
+   font-style: italic;
+   font-color:white;
+}
+
+.header {
+	padding: 10px 16px;
+	background: green;
+	color: #f1f1f1;
+	font-style: italic;
+	font-color:white;
+}
+
+a.links {
+	text-decoration: none;
+	border: 2px solid black;
+	background-color: black;
+	color: white;
+	padding: 4px;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+	
+#map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
