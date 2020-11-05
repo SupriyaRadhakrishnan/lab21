@@ -1,10 +1,11 @@
 <html>
 <head>
   <link href ="styles.css" rel="stylesheet"/>
+  <script src="Profile.js"></script>
 </head>
 <body>
 	<div class="header" id="myHeader">
-		<h2>Supriya Radhkrishnan</h2>
+		<h2>Supriya Radhakrishnan</h2>
 	</div>
 	<br />
 	<a class ="links" href="HomePage.html">Home</a> &ensp;&ensp;&ensp;&ensp;
@@ -54,4 +55,20 @@
 			Personal Profile:Supriya Radhkrishnan<br>
 	</footer>
 </body>
+	<script>
+	window.onscroll = function() {
+		myFunction()
+	};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+	}
+</script>
 </html>

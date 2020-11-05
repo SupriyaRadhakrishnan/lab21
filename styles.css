@@ -1,3 +1,19 @@
+@media all screen
+and (max-width : 320px){}
+/* Smartphones (landscape) ----------- */
+@media all screen
+and (min-width : 321px) {}
+/* Your Styles */
+/* On screens with a maximum window width of 1280px */
+@media screen and (max-width: 1280px){}
+/* On all screen types with a window width of between 1024px and 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px){}
+/* On TVs */
+@media tv
+/* On all vertically oriented types of screens */
+@media all and (orientation: portrait){}
+
+
 body {
 	margin:30;
 	font-family: Arial, Helvetica, sans-serif;
